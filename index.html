@@ -1,0 +1,94 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vought Registration Form</title>
+    <style>	
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('C:\Users\hp\Pictures\Camera Roll\WIN_20231202_19_26_52_Pro.jpg'); /* Replace with your image path */
+            background-size: cover; /* Adjusts the image to cover the entire viewport */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+            font-family: Arial, sans-serif; /* Basic font */
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better readability */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical; /* Allows vertical resizing */
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745; /* Green color for the button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838; /* Darker green when hovered */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vought Registration Form</h1>
+        <form action="/submit-registration" method="post">
+            <div class="form-group">
+                <label for="company-name">Supes Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-person">Real name:</label>
+                <input type="text" id="contact-person" name="contact-person" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
